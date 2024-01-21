@@ -1,3 +1,4 @@
+package Model;
 public class Robot {
   
   String robotType;
@@ -8,7 +9,7 @@ public class Robot {
   }
 
   public Robot(String robotType){
-    this.robotType = robotColor;
+    this.robotType = robotType;
   }
 
   public void activateRobot(){
@@ -17,13 +18,11 @@ public class Robot {
       System.out.println("I am a construction robot and I like to build things!");
 
     }else if(robotType.equals("household")){
-      System.out.println("Robot is being constructed");
-    }else if(robotType.equals("I am a basic model household robot. I vacuum the floor and carry groceries.")){
-      System.out.println("Robot is being constructed");
+      System.out.println("I am a household robot and I like to clean things!");
+
     }else if(robotType.equals("maintenance")){
       System.out.println("I am a maintenance robot and I like to fix things!");
-    }else {
-      System.out.println("Not a valid type of Robot");
+
     }
   }
 }

@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+import Model.Robot;
+
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -23,7 +25,7 @@ public class App {
                 System.out.println("Thanks! Here is your brand new Robot\n");
                 r2.activateRobot();
             } else if (choice == 3){
-                Robot r3 = new Robot("repair");
+                Robot r3 = new Robot("maintenance");
                 System.out.println("Thanks! Here is your brand new Robot\n");
                 r3.activateRobot();
             } else {
