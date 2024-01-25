@@ -1,16 +1,6 @@
-# Super Hero App
+## Getting Started
 
-Simple super hero program to demostrate the core concept of Java.
-
-## Key Java Practices
-
-- Object-Oriented Programming (OOP) with the use of classes and objects
-- Use of constructors for class initialization
-- Exception handling with try-catch blocks
-- Input handling using the Scanner class
-- Implementation of conditional logic with switch-case statements
-- Method overriding for custom behavior
-- Proper naming conventions and code organization
+Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
 
 ## Folder Structure
 
