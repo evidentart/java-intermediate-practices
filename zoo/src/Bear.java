@@ -3,17 +3,17 @@ public class Bear extends Animal{
   @Override
   public void drink() {
     
-    super.drink();
+    
 
     System.out.println("The bear guzzles some cold mountain spring water");
   }
 
   @Override
-  public String eat() {
+  public String eat(String food) {
     
-    String eat = super.eat();
+    
 
-    return eat + " and The bear munches on some berries";
+    return " The bear munches on some berries";
   }
 
   
