@@ -11,15 +11,17 @@ public class App {
 
         Bear bear1 = new Bear();
         Tiger tiger1 = new Tiger();
-        Animal animal1 = new Animal();
+        //
 
-        System.out.println(bear1.eat());
+        //System.out.println(bear1.eat());
+
+        //animal1.setId(100);
 
         feedAnimal(bear1);
         feedAnimal(tiger1);
-        feedAnimal(animal1);
+        //feedAnimal(animal1);
         
-       
+       scanner.close();
         
     }
 
