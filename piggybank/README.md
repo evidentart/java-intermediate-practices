@@ -1,6 +1,27 @@
+# PiggyBank App
+
+This is a simple PiggyBank application that allows you to deposit money into the piggybank and break it to get your money back.
+
+## Key Java Practices
+
+- Object-Oriented Programming (OOP)
+- Encapsulation
+- Constructor Overloading
+- Access Modifiers
+- Use of Scanner class
+- Proper Naming Conventions
+
+## Code Structure
+
+The code consists of the following main components:
+- `PiggyBank`: Model class to represent the piggybank.
+- `PiggyBankService`: Service class to handle operations on the piggybank.
+- `App`: Main class to run the piggybank application.
+
 ## Getting Started
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+To get started with the piggybank application, simply clone the repository and run the `App` class.
+
 
 ## Folder Structure
 
