@@ -1,3 +1,11 @@
+# Zoo Demo
+
+This is a simple mini project to demonstrate the usage of abstract classes and interfaces in Java.
+
+## Overview
+
+The project contains examples of abstract classes and interfaces and how they can be used in Java programming.
+
 ## Getting Started
 
 Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
