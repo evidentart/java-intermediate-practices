@@ -1,10 +1,11 @@
 package umbc;
 
-import java.sql.*;
+import umbc.controller.RobosaurController;
+import umbc.dao.DinoDAO;
+import umbc.dao.DinoDAOImpl;
+import umbc.service.DinoService;
+import umbc.service.DinoServiceImpl;
 import io.javalin.Javalin;
-import umbc.dao.PetDAO;
-import umbc.dao.PetDAOImpl;
-import umbc.model.Pet;
 
 public final class App {
     
@@ -12,11 +13,12 @@ public final class App {
    
     public static void main(String[] args) {
 
+        DinoDAO dinoDAO = new DinoDAOImpl();
+        DinoService dinoService = new DinoServiceImpl(dinoDAO);
+        RobosaurController robosaurController = new RobosaurController(dinoService);
 
-       Javalin app = Javalin.create();
-       app.start(9000);
+        Javalin app = robosaurController.startAPI();
+
 
     }
-
-    
 }
