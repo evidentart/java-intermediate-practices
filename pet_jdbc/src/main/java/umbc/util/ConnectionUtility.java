@@ -8,7 +8,7 @@ import java.util.Properties;
 
 public class ConnectionUtility {
 
-  private static String url = "";
+  private static String url = "jdbc:postgresql://localhost/postgres";
   private static String username = "";
   private static String password = "";
 
