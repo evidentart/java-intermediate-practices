@@ -1,13 +1,13 @@
 package umbc.util;
-import java.io.IOException;
-import java.io.InputStream;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.util.Properties;
+
 
 public class ConnectionUtility {
 
+  // enter values for url, username, and password of your database
   private static String url = "jdbc:postgresql://localhost/postgres";
   private static String username = "";
   private static String password = "";

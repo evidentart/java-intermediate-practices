@@ -24,8 +24,7 @@ public class DinoServiceImpl implements DinoService {
 
   @Override
   public Dinosaur updateDino(Dinosaur dino) {
-      // TODO Auto-generated method stub
-      throw new UnsupportedOperationException("Unimplemented method 'updateDino'");
+      return dinoDAO.updateDino(dino);
   }
 
   @Override
