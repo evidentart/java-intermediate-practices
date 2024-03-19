@@ -1,4 +1,0 @@
-20:05:06 INFO  umbc.App - Hello World!
-20:05:06 DEBUG umbc.App - debug logger
-20:05:06 ERROR umbc.App - Error logger
-20:05:06 WARN  umbc.App - Warn logger
