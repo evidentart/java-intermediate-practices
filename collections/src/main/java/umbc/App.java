@@ -2,9 +2,17 @@ package umbc;
 
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
+import java.util.Map;
+import java.util.HashMap;
+import java.util.ArrayDeque;
+import java.util.Deque;
+import java.util.PriorityQueue;
+import java.util.Queue;
+
 
 /**
  * Hello world!
@@ -15,6 +23,40 @@ public class App
     public static void main( String[] args )
     {
     
+        //priority queue
+        Queue<String> q = new PriorityQueue<>();
+        q.add("Java");
+        q.add("Python");
+        q.add("C++");
+
+        Iterator<String> iterator = q.iterator();
+
+        while (iterator.hasNext()) {
+
+            System.out.println(iterator.next());
+            iterator.remove();
+        }
+
+        System.out.println(q);
+
+
+        System.out.println();
+        
+        // Deque
+        Deque<String> deque = new ArrayDeque<>();
+
+        deque.add("Java");
+        deque.add("Python");
+        deque.add("C++");
+        deque.add("C#");
+        deque.add("JavaScript");
+        deque.add("Ruby");
+        deque.addFirst("Rust");
+        deque.addLast("Go");
+
+
+        System.out.println();
+
         // ArrayList
         ArrayList<String> dinosaurList = new ArrayList<>();
         // ArrayList<Dinosaur> dinoList = new ArrayList<>(Arrays.asList("Tyrannosaurus", "Stegosaurus", "Triceratops"));  /or the following
@@ -81,6 +123,47 @@ public class App
         // SomethingGeneric<Dinosaur> usesInteger = new SomethingGeneric<Dinosaur>(dino);
         // System.out.println(usesString.getValue());
         // System.out.println(usesInteger.getValue());
-       
+
+       System.out.println();
+
+       // Map
+       Map<String, Integer> map = new HashMap<>();
+
+       map.put("Mat", 15);
+       map.put("Mike", 22);
+       map.put("John", 36);
+
+       int age = map.get("John");
+       System.out.println(age);
+
+       int removedAge = map.remove("Mike");
+
+       if(map.containsKey("Mike")) {
+           System.out.println("Mike is in the map");
+        
+        }else{
+            System.out.println("Mike is not in the map");
+        }
+
+        System.out.println();
+
+
+        for (Map.Entry<String, Integer> entry : map.entrySet()) {
+            System.out.println(entry.getKey() + " " + entry.getValue());
+
+        }
+
+        System.out.println();
+
+        for (String key : map.keySet()) {
+
+            System.out.println(key + " " +map.get(key));
+        }
+
+
+
+
+
+
     }
 }
