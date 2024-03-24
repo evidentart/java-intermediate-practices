@@ -34,5 +34,17 @@ public class App {
         }
         System.out.println("\nThanks for using Robots R Us!");
         scanner.close();
+
+   // RobotFactory botFactory = new RobotFactory();
+   // Robot bot = null;
+   // Scanner userInput = new Scanner(System.in);
+   // String typeofBot = userInput.nextLine();
+   // bot = botFactory.buildRobot(typeOfBot);
+   // doRobotStuff(bot);
+   // public static void doRobotStuff (Robot bot){
+   //     bot.doWork();
+   //     bot.recharge();
+   // }    
+ 
     }
 } // end of class
